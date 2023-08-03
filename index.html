@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .card{
+            background-color: gold;
+            display: block;
+            box-shadow: 1px 2px 8px black;
+            width: 200px;
+            border-radius: 10px;
+            border: solid black;
+            position: relative;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .pic {
+            width: 100%; 
+            border-radius: 5px 5px 0 0;
+           
+        }
+        .text { 
+            border-top: solid black;
+            text-align: center;
+            font-size: 20px;    
+        }
+        .cross {
+            position: absolute;
+            display: flex;
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+            margin-left: 5px;
+
+        }
+        .notification {
+            position: absolute;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .notification:hover {
+            background: red;
+        }
+
+        .notification .badge {
+            position: absolute;
+            top: -10px;
+            left: 180px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="card"> 
+            <div class="pic">
+                <div class="cross">
+                    <img src="./cross.svg" alt="cross">
+                </div>
+                <a href="#" class="notification">
+                    <span class="badge">3</span>
+                  </a>
+                <img src="./robot.svg" alt="robot">
+            </div>
+             
+            <div class="text">
+                <h4>Antonio</h4>
+            </div>
+        </div>
+</body> 
+</html>
